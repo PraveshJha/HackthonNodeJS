@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx wdio run .\\test\\wdio.conf.ts",
+    "test": "wdio run .\\test\\wdio.conf.ts",
     "report": "allure open",
-    "build": "npx wdio run .\\test\\wdio.conf.ts"
+    "build": "wdio run .\\test\\wdio.conf.ts"
   },
   "author": "",
   "license": "ISC",
