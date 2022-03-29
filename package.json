@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-     "test": "npm run wdio run .\\test\\wdio.conf.ts",
+    "test": "npm run wdio run .\\test\\wdio.conf.ts",
     "report": "allure open",
-    "build": "npm run wdio run .\\test\\wdio.conf.ts"
+    "build": "npm run wdio run .\\test\\wdio.conf.ts",
+    "start": "react-scripts start"
   },
   "author": "",
   "license": "ISC",
