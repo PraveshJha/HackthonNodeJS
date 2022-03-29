@@ -15,8 +15,6 @@
     "@wdio/cli": "^7.19.2",
     "@wdio/config": "^7.19.1",
     "@wdio/spec-reporter": "^7.19.1",
-    "and": "^0.0.3",
-    "build": "^0.1.4",
     "chai-webdriverio": "^1.0.0"
   },
   "devDependencies": {
