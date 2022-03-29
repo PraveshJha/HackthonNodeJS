@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "wdio run .\\test\\wdio.conf.ts",
+    "test": "wdio run .\\test\\wdio.conf.ts --spec=./features/browsermethodDemo.feature",
     "report": "allure open",
     "build": "wdio run .\\test\\wdio.conf.ts --spec=./features/Opportunities.feature",
     "start": "react-scripts start"
