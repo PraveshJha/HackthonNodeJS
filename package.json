@@ -6,7 +6,7 @@
   "scripts": {
     "test": "wdio run .\\test\\wdio.conf.ts",
     "report": "allure open",
-    "build": "wdio run .\\test\\wdio.conf.ts",
+    "build": "wdio run .\\test\\wdio.conf.ts --spec=./features/Opportunities.feature",
     "start": "react-scripts start"
   },
   "author": "",
