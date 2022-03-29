@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npm wdio run .\\test\\wdio.conf.ts
+    "test": "npm wdio run .\\test\\wdio.conf.ts",
     "report": "allure open",
     "build": "npm wdio run .\\test\\wdio.conf.ts"
   },
