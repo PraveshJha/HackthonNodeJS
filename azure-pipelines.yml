@@ -17,5 +17,5 @@ steps:
 
 - script: |
     npm install
-    npx wdio
+    npx wdio run ./test/wdio.conf.ts
   displayName: 'npm install and build'
