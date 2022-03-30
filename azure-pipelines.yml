@@ -17,6 +17,7 @@ steps:
 
 - script: |
     npm install
+    npx wdio run ./test/wdio.conf.ts
   displayName: 'npm install and build'
 
 - task: AllureGenerate@1
