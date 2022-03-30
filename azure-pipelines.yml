@@ -18,11 +18,9 @@ steps:
 - script: |
     npm install
     npx wdio run ./test/wdio.conf.ts
-    npx allure open
-    cat report.xml
   displayName: 'npm install and build'
 
 - task: PublishTestResults@2
   inputs:
     testResultsFormat: 'JUnit'
-    testResultsFiles:  '*.xml'
+    testResultsFiles:  'testresult.xml'
