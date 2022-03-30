@@ -1,0 +1,32 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1648630293365' stop='1648630415844'>
+    <name>Demo for Browser Method</name>
+    <title>Demo for Browser Method</title>
+    <test-cases>
+        <test-case start='1648630293397' status='passed' stop='1648630415844'>
+            <name>To Test Browser Demo Method</name>
+            <title>To Test Browser Demo Method</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-100.0.4896.60'/>
+            </parameters>
+            <steps>
+                <step start='1648630293406' status='passed' stop='1648630415752'>
+                    <name>Given I will test browser method</name>
+                    <title>Given I will test browser method</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='08fdbe2b-0045-481f-b763-558234d785a3-attachment.png' type='image/png' size='38356'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Screenshot' source='01deb321-0bb1-43b3-a251-b2913ccc65e9-attachment.png' type='image/png' size='38338'/>
+            </attachments>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
