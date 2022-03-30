@@ -20,6 +20,12 @@ steps:
     npx wdio run ./test/wdio.conf.ts
   displayName: 'npm install and build'
 
+- task: PublishTestResults@2
+  inputs:
+    testResultsFormat: 'XUnit'
+    testResultsFiles: '**/TEST-*.xml'
+    testRunTitle: 'Test Suite Results'
+    
 - task: AllureGenerate@1
   inputs:
     resultsDir: 'allure-results'
