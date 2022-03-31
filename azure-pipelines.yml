@@ -22,7 +22,7 @@ steps:
 - task: PublishTestResults@2
   inputs:
     testResultsFormat: 'JUnit'
-    testResultsFiles: 'allure-results/*.xml'
+    testResultsFiles: './allure-results/*.xml'
     testRunTitle: 'Test Suite Results'
     
 - task: AllureGenerate@1
