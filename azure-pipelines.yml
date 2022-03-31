@@ -17,7 +17,7 @@ steps:
 
 - script: |
     npm install
-    npx wdio run ./test/wdio.test.ts  --spec=./features/test.feature
+    npx wdio ./test/wdio.test.ts  --spec=./features/test.feature
   displayName: build and test execution
 
 - task: PublishTestResults@2
