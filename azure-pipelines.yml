@@ -23,10 +23,9 @@ steps:
 - task: PublishTestResults@2
   inputs:
     testResultsFormat: 'XUnit'
-    testResultsFiles: '**/TEST-*.xml'
+    testResultsFiles: 'allure-results/*.xml'
     testRunTitle: 'Test Suite Results'
     
 - task: AllureGenerate@1
   inputs:
-    resultsDir: 'allure-results'
     targetDir: 'allure-report/$(Build.BuildNumber)'
