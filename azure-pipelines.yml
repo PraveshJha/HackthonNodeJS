@@ -17,8 +17,8 @@ steps:
 
 - script: |
     npm install
-    npx allure generate 'allure-results'
-  displayName: npx allure generate 'allure-results' --clean
+    npx allure generate 'allure-results' --clean
+  displayName: build and test execution
 
 - task: PublishTestResults@2
   inputs:
