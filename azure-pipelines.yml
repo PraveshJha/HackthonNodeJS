@@ -17,7 +17,6 @@ steps:
 
 - script: |
     npm install
-    npx wdio run ./test/wdio.conf.ts
   displayName: build and test execution
 
 - task: PublishTestResults@2
