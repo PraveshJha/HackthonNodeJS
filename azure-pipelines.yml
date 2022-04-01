@@ -17,12 +17,13 @@ steps:
 
 - script: |
     npm install
+    npx wdio run ./test/wdio.conf.ts
   displayName: build and test execution
 
 - task: PublishTestResults@2
   inputs:
     testResultsFormat: 'JUnit'
-    testResultsFiles: './allure-results/*.xml'
+    testResultsFiles: './**/*.xml'
     testRunTitle: 'Test Suite Results'
     
 - task: AllureGenerate@1
