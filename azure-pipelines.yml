@@ -17,7 +17,6 @@ steps:
 
 - script: |
     npm install
-    npx wdio run ./test/wdio.conf.ts
   displayName: build and test execution
 
 - task: PublishTestResults@2
@@ -28,5 +27,5 @@ steps:
     
 - task: AllureGenerate@1
   inputs:
-    resultsDir: './allure-results'
-    targetDir: './allure-report/$(Build.BuildNumber)'
+    resultsDir: 'allure-results'
+    targetDir: 'allure-report/$(Build.BuildNumber)'
