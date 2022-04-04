@@ -17,15 +17,6 @@ steps:
 
 - script: |
     npm install
+    allure generate "$(Common.TestResultsDirectory)" --output "$(Build.StagingDirectory)\allure"
   displayName: build and test execution
 
-- task: PublishTestResults@2
-  inputs:
-    testResultsFormat: 'JUnit'
-    testResultsFiles: './**/*.xml'
-    testRunTitle: 'Test Suite Results'
-    
-- task: AllureGenerate@1
-  inputs:
-    resultsDir: 'allure-results'
-    targetDir: 'allure-report/$(Build.BuildNumber)'
