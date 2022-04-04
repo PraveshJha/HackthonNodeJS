@@ -1,11 +1,11 @@
-{
+e{
   "name": "typescript_webdriverio",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "npx wdio run .\\test\\wdio.conf.ts --spec=./features/browsermethodDemo.feature",
-    "report": "allure open",
+    "report": "allure generate .\\allure-results",
     "build": "npx wdio run .\\test\\wdio.conf.ts --spec=./features/Opportunities.feature",
     "start": "react-scripts start"
   },
