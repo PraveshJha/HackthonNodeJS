@@ -17,6 +17,7 @@ steps:
 
 - script: |
     npm install
+    npm run report
   displayName: build and test execution
 
 - task: AllureGenerate@1
