@@ -17,11 +17,5 @@ steps:
 
 - script: |
     npm install
-    npm run report
   displayName: build and test execution
-
-- task: AllureGenerate@1
-  inputs:
-    resultsDir: allure generate '**/allure-results'
-    targetDir: '**/allure-report/$(Build.BuildNumber)'
 
